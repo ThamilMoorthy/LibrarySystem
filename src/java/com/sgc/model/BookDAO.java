@@ -23,6 +23,7 @@ public class BookDAO {
         databaseConnection dbconnection = new databaseConnection();
         Connection con = dbconnection.getDbConnection();
 // first comment
+//yufgyuf
         Statement statement = con.createStatement();
         String sql = "insert into bookdetails (bookId, title, author, mainClassification, subClassification, yearOfPublishing, lastPrintedYear, isbnNo, noOfPages) values('" + addbook.getBookId() + "','" + addbook.getTitle() + "','" + addbook.getAuthor() + "','" + addbook.getMainClassification() + "','" + addbook.getSubClassification() + "','" + addbook.getYearOfPublishing() + "','" + addbook.getLastPrintedYear() + "','" + addbook.getIsbnNo() + "','" + addbook.getNoOfPages() + "')";
 
